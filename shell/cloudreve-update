@@ -1,0 +1,30 @@
+#!/bin/bash
+name=$1
+path=$2
+port=$3
+
+if [ ! -n "$name" ]; then
+  name="cloudreve"
+fi
+
+if [ ! -n "$path" ]; then
+  path="/mnt/user/appdata"
+fi
+
+if [ ! -n "$port" ]; then
+  port="5212"
+fi
+echo $name
+rm -rf ./cloudreve-docker
+git clone https://github.com/56025192/cloudreve-docker
+docker build -t cloudreve ./cloudreve-docker
+docker stop $name
+docker rm $name
+docker run -d \
+	--name $name \
+	-p "${port}:5212" \
+	-v "${path}/${name}/log:/core/log" \
+	-v "${path}/${name}/uploads:/core/uploads" \
+	-v "${path}/${name}/db:/core/db" \
+	-v "${path}/${name}/etc:/core/etc" \
+cloudreve
