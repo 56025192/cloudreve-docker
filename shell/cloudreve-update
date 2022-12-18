@@ -4,7 +4,7 @@ path=$2
 port=$3
 
 if [ ! -n "$name" ]; then
-  name="cloudreve"
+  name="own"
 fi
 
 if [ ! -n "$path" ]; then
