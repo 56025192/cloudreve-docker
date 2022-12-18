@@ -6,7 +6,7 @@
 
 [GitHub](https://github.com/WumaCoder/cloudreve-docker)
 
-[Gitee](https://gitee.com/WumaCoder/cloudreve-docker)
+[Gitee](https://github.com/56025192/cloudreve-docker)
 
 [Docker 手册内置安装教程](https://www.jianshu.com/p/6d44b7d1a267)
 

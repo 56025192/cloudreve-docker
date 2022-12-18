@@ -12,7 +12,7 @@ if [ ! -n "$path" ]; then
 fi
 
 if [ ! -n "$port" ]; then
-  port="5212"
+  port="83"
 fi
 echo $name
 rm -rf ./cloudreve-docker
@@ -22,7 +22,7 @@ docker stop $name
 docker rm $name
 docker run -d \
 	--name $name \
-	-p "${port}:5212" \
+	-p "${port}:83" \
 	-v "${path}/${name}/log:/core/log" \
 	-v "${path}/${name}/uploads:/core/uploads" \
 	-v "${path}/${name}/db:/core/db" \
