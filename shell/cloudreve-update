@@ -8,7 +8,7 @@ if [ ! -n "$name" ]; then
 fi
 
 if [ ! -n "$path" ]; then
-  path="/root"
+  path="/mnt/user/appdata"
 fi
 
 if [ ! -n "$port" ]; then
