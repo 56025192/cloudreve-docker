@@ -23,7 +23,7 @@
 ## 快速体验
 
 ```bash
-git clone https://gitee.com/WumaCoder/cloudreve-docker.git
+git clone https://github.com/56025192/cloudreve-docker.git
 chmod 775 ./cloudreve-docker/install-shell.sh
 
 # 安装shell命令
@@ -258,7 +258,7 @@ docker update --restart=always own
 > 推荐使用 shell 方式
 
 ```bash
-git clone https://gitee.com/WumaCoder/cloudreve-docker.git
+git clone https://github.com/56025192/cloudreve-docker.git
 docker build -t cloudreve ./cloudreve-docker
 docker stop own
 docker rm own
@@ -281,7 +281,7 @@ docker run -d \
 ### 安装 shell
 
 ```bash
-git clone https://gitee.com/WumaCoder/cloudreve-docker.git
+git clone https://github.com/56025192/cloudreve-docker.git
 chmod 775 ./cloudreve-docker/install-shell.sh
 ./cloudreve-docker/install-shell.sh
 ```
